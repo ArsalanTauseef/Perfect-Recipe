@@ -1,0 +1,32 @@
+.upper-main-section {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    display: flex;
+    position: relative;
+}
+
+.upper-div-one, .upper-div-two {
+    width: calc(100%/2);
+    
+}
+
+.upper-div-one {
+    padding: 0px 50px 0px 50px;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center ; */
+    justify-content: center;
+
+}
+.upper-div-two {
+    background-color: #FCD0CA;
+    position: absolute;
+    height: 100%;
+    right: 0;
+    border-radius: 31% 0% 28% 88% / 26% 100% 33% 100% ;
+    z-index: 1;
+}
+/*  */
