@@ -40,11 +40,11 @@ nav {
     text-decoration: none;
     list-style: none;
     cursor: pointer;
+    
 }
 
-.nav-mid ul li:hover {
+.nav-mid ul li:hover, #tagNav:hover {
     color: #B65F54;
-    
 }
 
 .nav-right {
@@ -71,4 +71,9 @@ nav {
 }
 .nav-right button:nth-child(1):hover {
     background-color: #ffffff;
+}
+
+#tagNav {
+    text-decoration: none;
+    color: black;
 }

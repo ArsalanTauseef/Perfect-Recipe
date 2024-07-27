@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import './Header.css'
 
 export const Header = () => {
@@ -19,9 +20,11 @@ export const Header = () => {
     useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
+      
       window.removeEventListener('scroll', handleScroll);
+      console.log("Unmounted.");
     };
-    }, []);
+    }, [scrollY]);
 
   return (
     <>
@@ -32,11 +35,11 @@ export const Header = () => {
             </div>
             <div className='nav-mid'>
                 <ul>
-                    <li>Home</li>
-                    <li>Recipe</li>
-                    <li>Add Recipe</li>
-                    <li>Blogs</li>
-                    <li>About Us</li>
+                    <li><NavLink to='/' id='tagNav' >Home</NavLink></li>
+                    <li><NavLink to='recipe' id='tagNav'>Recipe</NavLink></li>
+                    <li><NavLink to='addrecipe' id='tagNav'>Add Recipe</NavLink></li>
+                    <li><NavLink to='blogs' id='tagNav'>Blogs</NavLink></li>
+                    <li><NavLink to='aboutus' id='tagNav'>About Us</NavLink></li>
                 </ul>
             </div>
             <div className='nav-right'>

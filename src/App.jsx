@@ -1,6 +1,7 @@
 import './App.css'
 import { Home } from './Components/Midsection/Nav Pages/Home/Home'
 import { Header } from './Components/Header/Header'
+import { Outlet } from 'react-router-dom'
 
 
 function App() {
@@ -9,8 +10,7 @@ function App() {
   return (
     <>
     <Header/>
-    <Home/>
-    <Home/>
+    <Outlet/> 
     </>
   )
 }
